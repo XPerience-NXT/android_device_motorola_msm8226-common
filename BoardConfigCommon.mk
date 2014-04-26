@@ -58,10 +58,11 @@ TARGET_USES_QCOM_BSP := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 
 # Audio
+BOARD_USES_CUSTOM_AUDIO_PLATFORM_PATH := device/motorola/msm8226-common/audio
 AUDIO_FEATURE_DISABLED_FM :=
 AUDIO_FEATURE_DISABLED_SSR := true
 BOARD_HAVE_QCOM_FM := true
-AUDIO_FEATURE_DISABLED_ANC_HEADSET := true
+AUDIO_FEATURE_DISABLED_MULTI_VOICE_SESSIONS := true
 
 # Graphics
 BOARD_EGL_CFG := $(LOCAL_PATH)/config/egl.cfg
@@ -70,16 +71,11 @@ TARGET_QCOM_DISPLAY_VARIANT := caf-bfam
 
 TARGET_QCOM_MEDIA_VARIANT := caf-bfam
 
-<<<<<<< HEAD
 # Kernel handles input boosting
 TARGET_POWERHAL_NO_TOUCH_BOOST := true
-=======
+
 # Use qcom power hal
 TARGET_POWERHAL_VARIANT := qcom
-
-# Hardware tunables framework
-BOARD_HARDWARE_CLASS := device/motorola/msm8226-common/cmhw/
->>>>>>> 9e6de34... Build qcom power hal
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := xt1031,xt1032,xt1033,xt1034,falcon_umts,falcon_umtsds,falcon_cdma,falcon_retuaws,falcon,falcon_gpe
