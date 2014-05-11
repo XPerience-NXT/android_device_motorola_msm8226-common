@@ -25,6 +25,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PACKAGES += \
     audio_policy.msm8226 \
     libaudioparameter \
+    libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing
 
@@ -132,16 +133,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     qcom.bt.le_dev_pwr_class=1 \
     ro.qc.sdk.audio.ssr=false \
     persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.voicerec=false \
     ro.qc.sdk.audio.fluencetype=fluence \
-    persist.audio.fluence.speaker=true \
-    use.voice.path.for.pcm.voip=true \
-    use.dedicated.device.for.voip=true \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=true \
     av.offload.enable=true \
-    mm.enable.smoothstreaming=true \
-    qcom.hw.aac.encoder=true
+    mm.enable.smoothstreaming=true
 
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
