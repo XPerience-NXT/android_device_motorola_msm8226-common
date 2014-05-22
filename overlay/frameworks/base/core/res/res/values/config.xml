@@ -95,5 +95,5 @@
     <!-- Enable overlay for all location components. -->
     <bool name="config_enableNetworkLocationOverlay" translatable="false">false</bool>
     <bool name="config_enableFusedLocationOverlay" translatable="false">false</bool>
-     <bool name="def_install_non_market_apps">true</bool>
+    <add-resource type="bool" name="def_install_non_market_apps">true</add-resource>
 </resources>
