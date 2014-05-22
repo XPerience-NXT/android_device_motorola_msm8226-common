@@ -75,6 +75,8 @@ TARGET_QCOM_MEDIA_VARIANT := caf-bfam
 # Kernel handles input boosting
 TARGET_POWERHAL_NO_TOUCH_BOOST := true
 
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Use qcom power hal
 TARGET_POWERHAL_VARIANT := qcom
 
