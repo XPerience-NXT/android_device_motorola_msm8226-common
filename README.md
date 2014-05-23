@@ -1,4 +1,6 @@
 Common device configuration for Motorola msm8226 based devices
 ==============================
 
-Copyright 2013 - The CyanogenMod Project
+Copyright 2014 - The AnimeROM 
+
+Based on the Work of Dhacker29
