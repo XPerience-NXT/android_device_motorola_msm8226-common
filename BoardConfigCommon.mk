@@ -24,17 +24,10 @@
 BOARD_VENDOR := motorola-qcom
 
 # Platform
-<<<<<<< HEAD
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
-TARGET_BOARD_PLATFORM := msm8226
-TARGET_BOOTLOADER_BOARD_NAME := MSM8226
-TARGET_CPU_VARIANT := krait
-=======
 TARGET_BOARD_PLATFORM_GPU     := qcom-adreno305
 TARGET_BOARD_PLATFORM         := msm8226
 TARGET_BOOTLOADER_BOARD_NAME  := MSM8226
 TARGET_CPU_VARIANT            := krait
->>>>>>> 124b6c689b09e4e7900dc68e270be7157054749c
 TARGET_USE_KINGFISHER_OPTIMIZATION := true
 
 -include device/motorola/qcom-common/BoardConfigCommon.mk
@@ -65,11 +58,8 @@ TARGET_USES_QCOM_BSP := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 
 # Audio
-<<<<<<< HEAD
+
 TARGET_QCOM_AUDIO_VARIANT := caf-new
-=======
-TARGET_QCOM_AUDIO_VARIANT             := caf-bfam
->>>>>>> 124b6c689b09e4e7900dc68e270be7157054749c
 BOARD_USES_CUSTOM_AUDIO_PLATFORM_PATH := device/motorola/msm8226-common/audio
 AUDIO_FEATURE_DISABLED_FM             :=
 AUDIO_FEATURE_DISABLED_SSR            := true
@@ -86,11 +76,8 @@ TARGET_QCOM_MEDIA_VARIANT := caf-bfam
 # Kernel handles input boosting
 TARGET_POWERHAL_NO_TOUCH_BOOST := true
 
-<<<<<<< HEAD
-=======
 TARGET_HW_DISK_ENCRYPTION := true
 
->>>>>>> 124b6c689b09e4e7900dc68e270be7157054749c
 # Use qcom power hal
 TARGET_POWERHAL_VARIANT := qcom
 
