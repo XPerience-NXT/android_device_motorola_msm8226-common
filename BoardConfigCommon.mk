@@ -24,10 +24,17 @@
 BOARD_VENDOR := motorola-qcom
 
 # Platform
+<<<<<<< HEAD
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 TARGET_CPU_VARIANT := krait
+=======
+TARGET_BOARD_PLATFORM_GPU     := qcom-adreno305
+TARGET_BOARD_PLATFORM         := msm8226
+TARGET_BOOTLOADER_BOARD_NAME  := MSM8226
+TARGET_CPU_VARIANT            := krait
+>>>>>>> 124b6c689b09e4e7900dc68e270be7157054749c
 TARGET_USE_KINGFISHER_OPTIMIZATION := true
 
 -include device/motorola/qcom-common/BoardConfigCommon.mk
@@ -37,14 +44,14 @@ LOCAL_PATH := device/motorola/msm8226-common
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
 # Inline kernel building
-BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG_MK := device/motorola/msm8226-common/mkbootimg.mk
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8226
-TARGET_KERNEL_CONFIG := msm8226_mmi_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.selinux=permissive androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 vmalloc=400M utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags androidboot.write_protect=0 zcache androidboot.selinux=permissive
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+BOARD_KERNEL_SEPARATED_DT    := true
+BOARD_CUSTOM_BOOTIMG_MK      := device/motorola/msm8226-common/mkbootimg.mk
+TARGET_KERNEL_SOURCE         := kernel/motorola/msm8226
+TARGET_KERNEL_CONFIG         := msm8226_mmi_defconfig
+BOARD_KERNEL_CMDLINE         := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.selinux=permissive androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 vmalloc=400M utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags androidboot.write_protect=0 zcache androidboot.selinux=permissive
+BOARD_KERNEL_BASE            := 0x00000000
+BOARD_KERNEL_PAGESIZE        := 2048
+BOARD_MKBOOTIMG_ARGS         := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 
 WLAN_MODULES:
 	mkdir -p $(KERNEL_MODULES_OUT)/pronto
@@ -58,16 +65,20 @@ TARGET_USES_QCOM_BSP := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 
 # Audio
+<<<<<<< HEAD
 TARGET_QCOM_AUDIO_VARIANT := caf-new
+=======
+TARGET_QCOM_AUDIO_VARIANT             := caf-bfam
+>>>>>>> 124b6c689b09e4e7900dc68e270be7157054749c
 BOARD_USES_CUSTOM_AUDIO_PLATFORM_PATH := device/motorola/msm8226-common/audio
-AUDIO_FEATURE_DISABLED_FM :=
-AUDIO_FEATURE_DISABLED_SSR := true
-BOARD_HAVE_QCOM_FM := true
+AUDIO_FEATURE_DISABLED_FM             :=
+AUDIO_FEATURE_DISABLED_SSR            := true
+BOARD_HAVE_QCOM_FM                    := true
 AUDIO_FEATURE_DISABLED_MULTI_VOICE_SESSIONS := true
 
 # Graphics
 BOARD_EGL_CFG := $(LOCAL_PATH)/config/egl.cfg
-TARGET_DISPLAY_USE_RETIRE_FENCE :=
+#TARGET_DISPLAY_USE_RETIRE_FENCE :=
 TARGET_QCOM_DISPLAY_VARIANT := caf-bfam
 
 TARGET_QCOM_MEDIA_VARIANT := caf-bfam
@@ -75,6 +86,11 @@ TARGET_QCOM_MEDIA_VARIANT := caf-bfam
 # Kernel handles input boosting
 TARGET_POWERHAL_NO_TOUCH_BOOST := true
 
+<<<<<<< HEAD
+=======
+TARGET_HW_DISK_ENCRYPTION := true
+
+>>>>>>> 124b6c689b09e4e7900dc68e270be7157054749c
 # Use qcom power hal
 TARGET_POWERHAL_VARIANT := qcom
 
@@ -91,3 +107,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 #TW_BRIGHTNESS_PATH := /sys/class/backlight/lcd-backlight/brightness
 #TW_MAX_BRIGHTNESS := 126
 TW_IGNORE_MAJOR_AXIS_0 := true
+TW_EXTERNAL_STORAGE_PATH := "/usb-otg"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "usb-otg"
+
