@@ -85,6 +85,23 @@
         <item>75</item>
     </integer-array>
 
+<<<<<<< HEAD
+=======
+    <!-- Vibrator pattern to be used as for notifications while alerts
+         are disabled (e.g. during phone calls) if enabled by the user.
+     -->
+    <integer-array name="config_notificationNoAlertsVibePattern">
+        <item>0</item>
+        <item>30</item>
+        <item>75</item>
+        <item>30</item>
+    </integer-array>
+
+    <!-- Performance profiles
+    <string name="config_perf_profile_prop">sys.perf.profile</string>
+    <string name="config_perf_profile_default_entry">1</string> -->
+
+>>>>>>> parent of 81cf49d... Remove unused overlay
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
          The default is false. -->
