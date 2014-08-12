@@ -23,7 +23,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Audio
 PRODUCT_PACKAGES += \
+    audiod \
     audio_policy.msm8226 \
+    audio.primary.msm8226 \
     libaudio-resampler \
     libaudioparameter \
     libqcomvisualizer \
@@ -70,7 +72,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8226 \
     hwcomposer.msm8226 \
     keystore.msm8226 \
-    lights.MSM8226 \
+    lights.msm8226 \
     memtrack.msm8226 \
     power.msm8226
 
