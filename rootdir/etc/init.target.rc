@@ -62,7 +62,7 @@ on post-fs
     restorecon /data/media /data/media/0 /data/media/legacy /data/media/obb
     # Mount PDS
     wait /dev/block/platform/msm_sdcc.1/by-name/pds
-    exec /system/bin/mount_pds.sh
+    exec /system/etc/mount_pds.sh
 
 
 on boot

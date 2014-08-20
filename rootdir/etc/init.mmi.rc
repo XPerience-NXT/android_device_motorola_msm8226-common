@@ -145,7 +145,7 @@ on early-boot
 # Annotate panics with helpful information
      exec /system/bin/apanic_annotate.sh build
 # Motorola Charge_only_mode
-    exec /system/bin/sh /system/bin/moto_com.sh
+    exec /system/bin/sh /system/etc/moto_com.sh
 
 on boot
     # Change ownership and permission for vibrator
